@@ -40,7 +40,7 @@
    "provides" : {
       "Cache::Memory::Simple" : {
          "file" : "lib/Cache/Memory/Simple.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -49,5 +49,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
