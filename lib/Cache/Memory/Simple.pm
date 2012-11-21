@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Time::HiRes;
 use 5.008001;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub new {
     my ($class) = @_;
@@ -49,6 +49,12 @@ sub set {
 sub delete :method {
     my ($self, $key) = @_;
     delete $self->{$key};
+}
+
+sub delete_all {
+    my $self = shift;
+    delete $self->{$_} for keys %$self;
+    return;
 }
 
 sub purge {
@@ -120,6 +126,10 @@ Delete key from cache.
 Purge expired data.
 
 This module does not purge expired data automatically. You need to call this method if you need.
+
+=item $obj->delete_all()
+
+Remove all data from cache.
 
 =back
 

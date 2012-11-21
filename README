@@ -38,6 +38,9 @@ METHODS
         This module does not purge expired data automatically. You need to
         call this method if you need.
 
+    $obj->delete_all()
+        Remove all data from cache.
+
 AUTHOR
     Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
 
