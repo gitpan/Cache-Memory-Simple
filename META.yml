@@ -21,11 +21,11 @@ no_index:
 provides:
   Cache::Memory::Simple:
     file: lib/Cache/Memory/Simple.pm
-    version: 0.05
+    version: 1.00
 requires:
   Time::HiRes: 0
   parent: 0
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+version: 1.00
