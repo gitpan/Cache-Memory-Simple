@@ -29,6 +29,11 @@ METHODS
     $obj->set($key, $val, $expiration)
         Set a stuff for cache.
 
+    $obj->get_or_set($key, $code, $expiration)
+        Get a cache value for *$key* if it's already cached. If it's not
+        cached then, run *$code* and cache *$expiration* seconds and return
+        the value.
+
     $obj->delete($key)
         Delete key from cache.
 

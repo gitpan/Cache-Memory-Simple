@@ -21,11 +21,14 @@ no_index:
 provides:
   Cache::Memory::Simple:
     file: lib/Cache/Memory/Simple.pm
-    version: 1.00
+    version: 1.01
+  Cache::Memory::Simple::Scalar:
+    file: lib/Cache/Memory/Simple/Scalar.pm
+    version: 0
 requires:
   Time::HiRes: 0
   parent: 0
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.00
+version: 1.01

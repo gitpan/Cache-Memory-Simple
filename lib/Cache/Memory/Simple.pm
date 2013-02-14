@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Time::HiRes;
 use 5.008001;
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 sub new {
     my ($class) = @_;
@@ -116,6 +116,11 @@ Get a stuff from cache storage by C<< $key >>
 =item $obj->set($key, $val, $expiration)
 
 Set a stuff for cache.
+
+=item $obj->get_or_set($key, $code, $expiration)
+
+Get a cache value for I<$key> if it's already cached. If it's not cached then, run I<$code> and cache I<$expiration> seconds
+and return the value.
 
 =item $obj->delete($key)
 

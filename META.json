@@ -42,7 +42,11 @@
    "provides" : {
       "Cache::Memory::Simple" : {
          "file" : "lib/Cache/Memory/Simple.pm",
-         "version" : "1.00"
+         "version" : "1.01"
+      },
+      "Cache::Memory::Simple::Scalar" : {
+         "file" : "lib/Cache/Memory/Simple/Scalar.pm",
+         "version" : 0
       }
    },
    "release_status" : "stable",
@@ -51,5 +55,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "1.00"
+   "version" : "1.01"
 }
