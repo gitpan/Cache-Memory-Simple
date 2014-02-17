@@ -4,8 +4,10 @@
       "Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.4.9",
-   "license" : "perl_5",
+   "generated_by" : "Minilla/v0.11.0",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -19,7 +21,8 @@
          "share",
          "eg",
          "examples",
-         "author"
+         "author",
+         "builder"
       ]
    },
    "prereqs" : {
@@ -55,7 +58,7 @@
    "provides" : {
       "Cache::Memory::Simple" : {
          "file" : "lib/Cache/Memory/Simple.pm",
-         "version" : "1.02"
+         "version" : "1.03"
       },
       "Cache::Memory::Simple::Scalar" : {
          "file" : "lib/Cache/Memory/Simple/Scalar.pm"
@@ -72,9 +75,9 @@
          "web" : "https://github.com/tokuhirom/Cache-Memory-Simple"
       }
    },
-   "version" : "1.02",
+   "version" : "1.03",
    "x_contributors" : [
       "Masahiro Nagano <kazeburo@gmail.com>",
-      "tokuhirom <tokuhirom@gmail.com>"
+      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
    ]
 }
